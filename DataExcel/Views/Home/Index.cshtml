@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <form method="post" asp-controller="Home" asp-action="Import" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <button type="submit" >Save</button>
+    </form>
+</div>
